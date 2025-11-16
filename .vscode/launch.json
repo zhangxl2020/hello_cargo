@@ -14,7 +14,12 @@
                     "--bin=hello_cargo"
                 ]
             },
-            "args": []
+            // 程序参数：在这里填写运行时参数，例如 ["./", "errors.log"]
+            "args": [],
+            // 启用 Rust 的回溯以便在 panic 时获得堆栈信息
+            "env": {
+                "RUST_BACKTRACE": "1"
+            }
         },
         {
             "name": "Debug unit tests in executable 'hello_cargo'",

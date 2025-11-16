@@ -1,3 +1,24 @@
 {
-    "code-debuger.fileDirectoryAsCwd": true
+    "code-debuger.fileDirectoryAsCwd": true,
+    // Rust Analyzer settings
+    "rust-analyzer": {
+        "cargo": {
+            "loadOutDirsFromCheck": true
+        },
+        "procMacro": {
+            "enable": true
+        },
+        "checkOnSave": {
+            "command": "check"
+        },
+        "telemetry": {
+            "enable": false
+        }
+    },
+    "rust-analyzer.server.displayEnv": {},
+    // Use rust-analyzer for formatting and enable format on save for Rust files
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    }
 }
